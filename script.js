@@ -18,9 +18,9 @@ const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "A", "B", "C", "D", "E", "F"];
 const btn2 = document.getElementById("btn2");
 
 btn2.addEventListener('click', () => {
-  let random = getRandomNum();
   let hexColor = "#";
   for (let i = 0; i < 6; i++) {
+    let random = getRandomNum();
     hexColor += hex[random];
   }
   document.body.style.backgroundColor = hexColor;
